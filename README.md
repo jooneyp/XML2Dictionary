@@ -12,6 +12,7 @@ XML2Dictionary is an object which must be set as NSXMLParser delegate to parse a
 * All chars founded becomes a NSString.
 
 Here goes an example!:
+
     //Initialize XML2Dictionary
     XML2NSDictionary* parseDelegate = [[XML2NSDictionary alloc] init];
 
@@ -31,7 +32,5 @@ Here goes an example!:
     
     //Now we can navigate through the result
     NSMutableDictionary *xml = parseDelegate.result;
-    NSObject *unrecognizedObject = [[[xml valueForKey:@"node1"] 
-    								valueForKey:@"node2"] 
-    								objectAtIndex:0];
+    NSObject *unrecognizedObject = [[[xml valueForKey:@"node1"] valueForKey:@"node2"] objectAtIndex:0];
 
